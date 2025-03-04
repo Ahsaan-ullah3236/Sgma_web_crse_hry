@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: antiquewhite;
+            padding: 20px;
+            height: 100vh;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        #box1 {
+            background-color: aqua;
+        }
+
+        #box2 {
+            background-color: orange;
+        }
+
+        #box3 {
+            background-color: purple;
+        }
+
+        #box4 {
+            background-color: green;
+        }
+
+        #box5 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <h1>Change the Boxes Color</h1>
+        <div class="box-container">
+            <div id="box1" class="box">Box 1</div>
+            <div id="box2" class="box">Box 2</div>
+            <div id="box3" class="box">Box 3</div>
+            <div id="box4" class="box">Box 4</div>
+            <div id="box5" class="box">Box 5</div>
+        </div>
+    </div>
+    <script>
+
+        const boxesContainer = document.querySelector(".boxes");
+        const boxes = document.querySelectorAll(".box");
+        function getRandomHexColor() {
+            return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+        Array.from(boxes).forEach(e=>{
+            e.style.backgroundColor = getRandomHexColor()
+            e.style.color = getRandomHexColor()
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

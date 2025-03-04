@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is the practice folder where can i make a small calcultor</h1>
+    <script>
+        let rand1 = Math.floor(Math.random() * 10 );
+        console.log(rand1);
+        let first, second, third;
+
+        // Lets generate the First Word
+        if (rand1 < 3) {
+            first = "Crazy"
+        }
+        else if (rand1 < 6 && rand1 >= 3) {
+            second = "Amazing"
+        }
+        else {
+            third = "Fire"
+        }
+
+        // Lets generate the Second Word
+        let rand2 = Math.floor(Math.random() * 10 + 10);
+        if (rand2 < 13) {
+            first = "Engine"
+        }
+        else if (rand1 < 16 && rand1 >= 13) {
+            second = "Foods"
+        }
+        else {
+            third = "Garments"
+        }
+
+        // Lets generate the third Word
+        let rand3 = Math.floor(Math.random() * 10 +20 );
+        if (rand3 < 23) {
+            first = "Bros"
+        }
+        else if (rand1 < 26 && rand1 >= 23) {
+            second = "Limitied"
+        }
+        else {
+            third = "Hubs"
+        }
+
+        console.log(`${first} ${second} ${third}`);
+        
+
+    </script>
+</body>
+
+</html>
