@@ -81,7 +81,17 @@ async function fetchData() {
   
   fetchData();
   
-
+// fifth 
+//   try...catch is a JavaScript statement used for error handling. It allows you to execute a block of code (try) and catch any errors (catch) that may occur during execution
+try {
+    let result = 10 / 0; // No error, but returns Infinity
+    console.log(result);
+  
+    let x = y + 5; // This will throw an error (y is undefined)
+  } catch (error) {
+    console.log("An error occurred:", error.message);
+  }
+  
   
 
    
