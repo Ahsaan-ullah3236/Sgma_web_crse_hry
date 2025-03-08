@@ -110,8 +110,9 @@ function getData() {
   // Output:
   // Fetching data...
   // (After 2 seconds) Data received!
-  
-  
+  function name(params) {
+    
+  }
   
 
    
