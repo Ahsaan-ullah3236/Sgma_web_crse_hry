@@ -115,6 +115,14 @@
   }
 console.log( myfunction());
 
+function greet(name) {
+    return "Hello, " + name + "!";
+  }
+  
+  console.log(greet("Ahsan")); // Output: Hello, Ahsan!
+  console.log(greet("Ali"));   // Output: Hello, Ali!
+  
+
   
 
    
