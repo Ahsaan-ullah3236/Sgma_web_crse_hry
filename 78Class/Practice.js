@@ -122,19 +122,29 @@
 //   console.log(greet("Ahsan")); // Output: Hello, Ahsan!
 //   console.log(greet("Ali"));   // Output: Hello, Ali!
   
+// let myarray = [1, 3, 2, 4, 5, 3, 2, 6, 5, 7];
+
+// let uniqueArray = [];
+// let seen = {};
+
+// myarray.forEach(element => {
+//     if (!seen[element]) {  // If the element is not in "seen" object
+//         uniqueArray.push(element); // Add it to the uniqueArray
+//         seen[element] = true; // Mark it as seen
+//     }
+// });
+
+// console.log("Unique Array:", uniqueArray);
+
 let myarray = [1, 3, 2, 4, 5, 3, 2, 6, 5, 7];
 
-let uniqueArray = [];
-let seen = {};
+console.log("Original Array:", myarray);
 
-myarray.forEach(element => {
-    if (!seen[element]) {  // If the element is not in "seen" object
-        uniqueArray.push(element); // Add it to the uniqueArray
-        seen[element] = true; // Mark it as seen
-    }
-});
+// Removing duplicates using Set
+let uniqueArray = [...new Set(myarray)];
 
 console.log("Unique Array:", uniqueArray);
+
 
 
 
