@@ -110,18 +110,34 @@
 //   // Output:
 //   // Fetching data...
 //   // (After 2 seconds) Data received!
-  function myfunction() {
-    return "hello world";
-  }
-console.log( myfunction());
+//   function myfunction() {
+//     return "hello world";
+//   }
+// console.log( myfunction());
 
-function greet(name) {
-    return "Hello, " + name + "!";
-  }
+// function greet(name) {
+//     return "Hello, " + name + "!";
+//   }
   
-  console.log(greet("Ahsan")); // Output: Hello, Ahsan!
-  console.log(greet("Ali"));   // Output: Hello, Ali!
+//   console.log(greet("Ahsan")); // Output: Hello, Ahsan!
+//   console.log(greet("Ali"));   // Output: Hello, Ali!
   
+let myarray = [1, 3, 2, 4, 5, 3, 2, 6, 5, 7];
+
+let uniqueArray = [];
+let seen = {};
+
+myarray.forEach(element => {
+    if (!seen[element]) {  // If the element is not in "seen" object
+        uniqueArray.push(element); // Add it to the uniqueArray
+        seen[element] = true; // Mark it as seen
+    }
+});
+
+console.log("Unique Array:", uniqueArray);
+
+
+
 
   
 
