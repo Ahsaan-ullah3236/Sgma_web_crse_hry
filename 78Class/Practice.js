@@ -121,9 +121,10 @@
   
 //   console.log(greet("Ahsan")); // Output: Hello, Ahsan!
 //   console.log(greet("Ali"));   // Output: Hello, Ali!
-  
-// let myarray = [1, 3, 2, 4, 5, 3, 2, 6, 5, 7];
 
+
+// Own practice 
+// let myarray = [1, 3, 2, 4, 5, 3, 2, 6, 5, 7];
 // let uniqueArray = [];
 // let seen = {};
 
@@ -134,16 +135,30 @@
 //     }
 // });
 
+
+
+// Own practice 
 // console.log("Unique Array:", uniqueArray);
 
+// let myarray = [1, 3, 2, 4, 5, 3, 2, 6, 5, 7];
+
+// console.log("Original Array:", myarray);
+
+// // Removing duplicates using Set
+// let uniqueArray = [...new Set(myarray)];
+
+// console.log("Unique Array:", uniqueArray);
+
+// Own practice 
 let myarray = [1, 3, 2, 4, 5, 3, 2, 6, 5, 7];
 
 console.log("Original Array:", myarray);
 
-// Removing duplicates using Set
-let uniqueArray = [...new Set(myarray)];
+// Removing duplicates and sorting in ascending order
+let uniqueArray = [...new Set(myarray)].sort((a, b) => a - b);
 
-console.log("Unique Array:", uniqueArray);
+console.log("Sorted Unique Array:", uniqueArray);
+
 
 
 
