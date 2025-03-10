@@ -51,14 +51,14 @@
 
 // second 
 // cReating and object in the simplest way 
-// const person = {
-//     name: "ahsan",
-//     age: 25,
-//     greet: function greeting() {
-//         console.log(`Assalamualikum , my name is ${this.name}`);
-//     }
-// }
-// console.log(person.greet());
+const person = {
+    name: "ahsan",
+    age: 25,
+    greet: function greeting() {
+        console.log(`Assalamualikum , my name is ${this.name}`);
+    }
+}
+console.log(person.greet());
 
 // third 
 const person1 = new object()
